@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pushd /etc/init.d
+patch -N -p0 < /root/pox/upgrades/1/vswitchd.patch
+popd
