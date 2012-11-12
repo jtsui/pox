@@ -7,7 +7,7 @@ cd $DIR
 #cd pox
 
 while [ 1 ] ; do
-  ./pox.py eecore
+  ./pox.py eecore 2>&1 | tee -a /tmp/pox-run
   echo
   echo "Restarting POX in $TIME seconds.  Hit Ctrl-C to abort."
   sleep $TIME
